@@ -19,11 +19,9 @@ model Profile {
   userId         String    @unique
   name           String
   imageUrl       String    @db.Text
-  email          String?    @db.Text
+  email          String    @db.Text
   emailVerified  DateTime?
   hashedPassword String?
-
-  
 
   servers  Server[]
   members  Member[]
