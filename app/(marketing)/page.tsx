@@ -3,8 +3,8 @@ import Heading from "./_components/heading";
 
 const page = () => {
   return (
-    <div className="min-h-full flex flex-col">
-      <div className=" flex flex-col items-center justify-center md:justify-start text-center gap-y-1 flex-1 px-6 pb-1">
+    <div>
+      <div className="flex flex-col items-center justify-center md:justify-start text-center  px-6">
         <Heading />
       </div>
       <Footer />

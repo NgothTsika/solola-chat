@@ -3,6 +3,7 @@
 import { ModeToggle } from "@/app/components/mode-toggle";
 import { useScrollTop } from "@/app/hooks/use-scroll-top";
 import { cn } from "@/app/libs/utils";
+import NextAuth from "next-auth";
 
 const Navbar = () => {
   const scroll = useScrollTop();
@@ -14,9 +15,11 @@ const Navbar = () => {
         scroll && "border-b shadow-sm"
       )}
     >
-      <h1>LOGO</h1>
-      <div className=" flex items-center gap-x-2 w-full justify-between md:justify-end md:*:ml-auto ">
-        <ModeToggle />
+      <div className=" flex w-full items-center justify-between">
+        <h1>LOGO</h1>
+        <div className=" flex items-center gap-x-2">
+          <ModeToggle />
+        </div>
       </div>
     </div>
   );
